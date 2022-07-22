@@ -1,7 +1,7 @@
 {
   "name": "UnFlash",
-  "description": "Build an Extension!",
-  "version": "1.0",
+  "description": "This extension aims to help people with epilepsy by attempting to replace auto-playing gifs and videos with still images.",
+  "version": "0.0.1",
   "manifest_version": 3,
   "content_scripts": [
     {

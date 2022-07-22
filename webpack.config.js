@@ -5,7 +5,7 @@ module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
     hidePageOnLoad: path.resolve(__dirname, './src/hidePageOnLoad.ts'),
-    stopGifs: path.resolve(__dirname, './src/stopGifs.ts'),
+    stop: path.resolve(__dirname, './src/stop.ts'),
   },
   output: {
     path: path.join(__dirname, './dist'),

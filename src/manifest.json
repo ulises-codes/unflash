@@ -11,8 +11,8 @@
     },
     {
       "matches": ["<all_urls>"],
-      "run_at": "document_idle",
-      "js": ["stopGifs.js"]
+      "run_at": "document_end",
+      "js": ["stop.js"]
     }
   ]
 }

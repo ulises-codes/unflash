@@ -4,6 +4,7 @@ document.addEventListener('readystatechange', () => {
 
     if (!!doc) {
       doc.style.setProperty('visibility', 'hidden');
+      doc.style.setProperty('opacity', '0');
     }
   }
 });

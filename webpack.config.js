@@ -4,7 +4,8 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
-    index: path.resolve(__dirname, './src/index.ts'),
+    hidePageOnLoad: path.resolve(__dirname, './src/hidePageOnLoad.ts'),
+    stopGifs: path.resolve(__dirname, './src/stopGifs.ts'),
   },
   output: {
     path: path.join(__dirname, './dist'),
@@ -22,6 +23,13 @@ module.exports = {
         test: /\.tsx?$/,
         loader: 'ts-loader',
         exclude: /node_modules/,
+      },
+      {
+        test: /\.css$/i,
+        use: [
+          { loader: 'style-loader', options: { injectType: 'styleTag' } },
+          'css-loader',
+        ],
       },
     ],
   },

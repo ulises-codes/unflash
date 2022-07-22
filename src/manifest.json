@@ -6,7 +6,13 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["index.js"]
+      "run_at": "document_start",
+      "js": ["hidePageOnLoad.js"]
+    },
+    {
+      "matches": ["<all_urls>"],
+      "run_at": "document_idle",
+      "js": ["stopGifs.js"]
     }
   ]
 }

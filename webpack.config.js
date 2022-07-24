@@ -43,5 +43,14 @@ module.exports = {
         },
       ],
     }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: './assets/icons/',
+          to: './assets/icons/',
+          context: 'src',
+        },
+      ],
+    }),
   ],
 };

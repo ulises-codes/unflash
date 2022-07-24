@@ -4,6 +4,7 @@
   "description": "This extension aims to help people with epilepsy by attempting to replace auto-playing gifs and videos with still images.",
   "main": "index.js",
   "scripts": {
+    "build": "NODE_ENV=production webpack build",
     "start": "NODE_ENV=development webpack --watch"
   },
   "keywords": [],
